@@ -2,4 +2,4 @@ flask
 flask-cors
 requests
 python-dotenv
-pip freeze > requirements.txt
+gunicorn
