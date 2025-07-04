@@ -14,6 +14,7 @@ CORS(app) # Enable CORS for cross-origin requests from your frontend
 # IMPORTANT: Retrieve your Gemini API Key from environment variables.
 # It will now be loaded from the .env file if it exists.
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+print("DEBUG: GEMINI_API_KEY loaded:", GEMINI_API_KEY[:10], "..." if GEMINI_API_KEY else "EMPTY")
 
 if not GEMINI_API_KEY:
     print("WARNING: GEMINI_API_KEY not found in environment variables or .env file.")
